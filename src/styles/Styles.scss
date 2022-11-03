@@ -1,0 +1,33 @@
+// ? Global Styles
+
+// ? Variables
+@import "./Variables";
+
+*,
+html {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.cust-hr {
+  border-top: 4px solid $primary;
+  width: 150px;
+}
+
+.a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// ? Home Component all Styling here
+@import "./Home";
+
+// ? Common Components all Styling here
+@import "./Common";
