@@ -101,7 +101,7 @@ const Home = () => {
               sx={{ mt: 1 }}
             >
               <Typography fontWeight={500}>
-                <Link to="/" className="a">
+                <Link to="/create-account" className="a">
                   CREATE ACCOUNT
                 </Link>
               </Typography>
