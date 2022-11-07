@@ -35,7 +35,7 @@ const Home = () => {
             elevation={5}
           >
             <Stack alignItems="center">
-              <img src={Logo} alt="PAKISTAN - ITHUB" width={240} height={230} />
+              <img src={Logo} alt="PAKISTAN - ITHUB" width={230} height={220} />
             </Stack>
             <Typography variant="h4" textAlign="center" fontWeight={500}>
               Welcome back

@@ -8,6 +8,12 @@
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 1536px) {
+  .log-in {
+    padding: 51px 0 130px 0;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .log-in {
     padding: 50px 0 130px 0;
