@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Container,
-  Divider,
-  Paper,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Button, Container, Divider, Paper, Typography } from "@mui/material";
 import LocalPrintshopIcon from "@mui/icons-material/LocalPrintshop";
 import { useNavigate } from "react-router-dom";
 
