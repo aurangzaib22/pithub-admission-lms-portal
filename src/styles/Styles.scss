@@ -6,9 +6,12 @@
 *,
 html {
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
 }
 
 .cust-hr {
@@ -26,8 +29,16 @@ html {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .justify {
+    text-align: justify !important;
+  }
+}
 // ? Home Component all Styling here
 @import "./Home";
 
 // ? Common Components all Styling here
 @import "./Common";
+
+// ? All Components in dashboard folder. All styling is here
+@import "./Dashboard";
