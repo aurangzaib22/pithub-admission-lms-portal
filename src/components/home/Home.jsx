@@ -17,9 +17,14 @@ import {
   VisibilityOff,
   AlternateEmailRounded,
 } from "@mui/icons-material";
+import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
   const [showPassword, setShowPassword] = useState(false);
+
+  const is320 = useMediaQuery({
+    query: "(max-width: 320px)",
+  });
 
   return (
     <div className="log-in">
@@ -89,9 +94,7 @@ const Home = () => {
             </Button>
 
             <Stack alignItems="flex-end" sx={{ mt: 1 }}>
-              <Link to="/" className="a">
-                Forgot Password?
-              </Link>
+              Forgot Password?
             </Stack>
 
             <Stack
@@ -100,14 +103,20 @@ const Home = () => {
               justifyContent="space-between"
               sx={{ mt: 1 }}
             >
-              <Typography fontWeight={500}>
+              <Typography
+                fontWeight={500}
+                textAlign={is320 ? "center" : "left"}
+              >
                 <Link to="/create-account" className="a">
                   CREATE ACCOUNT
                 </Link>
               </Typography>
-              <Typography fontWeight={500}>
-                <Link to="/" className="a">
-                  NEED HELP?
+              <Typography
+                fontWeight={500}
+                textAlign={is320 ? "center" : "left"}
+              >
+                <Link to="/forgot-password" className="a">
+                  NEED HELP
                 </Link>
               </Typography>
             </Stack>

@@ -5,6 +5,9 @@ const Home = lazy(() => import("./components/home/Home"));
 const CreateAccount = lazy(() =>
   import("./components/create_account/CreateAccount")
 );
+const ForgotPassword = lazy(() =>
+  import("./components/forgot_password/ForgotPassword")
+);
 
 const App = () => {
   return (
@@ -12,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create-account" element={<CreateAccount />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </Suspense>
   );
