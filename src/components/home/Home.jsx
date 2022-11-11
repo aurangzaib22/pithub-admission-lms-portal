@@ -32,7 +32,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    navigate("/dashboard/instructions");
+    navigate("/dashboard/verify-email");
   };
 
   return (

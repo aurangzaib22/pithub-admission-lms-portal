@@ -17,6 +17,9 @@ const ApplicationForm = lazy(() =>
 const HomeDashboard = lazy(() =>
   import("./components/dashboard/home_dashboard/HomeDashboard")
 );
+const VerifyEmail = lazy(() =>
+  import("./components/dashboard/verify_email/VerifyEmail")
+);
 
 const App = () => {
   return (
@@ -26,6 +29,7 @@ const App = () => {
         <Route path="/create-account" element={<CreateAccount />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/dashboard/instructions" element={<Instructions />} />
+        <Route path="/dashboard/verify-email" element={<VerifyEmail />} />
         <Route
           path="/dashboard/application-form"
           element={<ApplicationForm />}
